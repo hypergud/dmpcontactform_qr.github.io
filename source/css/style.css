@@ -9,6 +9,7 @@
   -o-font-smoothing: antialiased;
   /* font-smoothing: antialiased; */
   text-rendering: optimizeLegibility;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  font: 400 12px/16px 'Noto Sans KR', sans-serif;
 }
 
 #contact {
