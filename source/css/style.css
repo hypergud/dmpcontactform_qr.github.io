@@ -164,19 +164,20 @@ fieldset {
   color: #888;
 }
 
-textarea::placeholder{
+
+textarea:focus::placeholder{
   color: black;
 }
 
-textarea::-webkit-input-placeholder{
+textarea:focus::-webkit-input-placeholder{
   color: black;
 }
 
-textarea::-moz-placeholder{
+textarea:focus::-moz-placeholder{
   color: black;
 }
 
-textarea:-ms-input-placeholder{
+textarea:focus:-ms-input-placeholder{
   color: black;
 }
 
