@@ -18,30 +18,48 @@
           <h5>카테고리 선택</h5>
           <div id="category">
             <input type="radio" id="radio1" class="radio-category" name="radios"><label for="radio1">분실</label>
-          <input type="radio" id="radio2" class="radio-category" name="radios"><label for="radio2">점검</label>
-          <input type="radio" id="radio3" class="radio-category" name="radios"><label for="radio3">수리</label>
-          <br>
-          <input type="radio" id="radio4" class="radio-category" name="radios"><label for="radio4">민원</label>
-          <input type="radio" id="radio5" class="radio-category" name="radios"><label for="radio5">공공시설</label>
-          <input type="radio" id="radio6" class="radio-category" name="radios"><label for="radio6">개인시설</label>
-          <input type="radio" id="radio7" class="radio-category" name="radios"><label for="radio7">기타</label>
+            <input type="radio" id="radio2" class="radio-category" name="radios"><label for="radio2">점검</label>
+            <input type="radio" id="radio3" class="radio-category" name="radios"><label for="radio3">수리</label>
+            <br>
+            <input type="radio" id="radio4" class="radio-category" name="radios"><label for="radio4">민원</label>
+            <input type="radio" id="radio5" class="radio-category" name="radios"><label for="radio5">공공시설</label>
+            <input type="radio" id="radio6" class="radio-category" name="radios"><label for="radio6">개인시설</label>
+            <input type="radio" id="radio7" class="radio-category" name="radios"><label for="radio7">기타</label>
           </div>
           
           <br>
-            <label>호수 입력</label>
+            <label class="label-h5">호수 입력</label>
             <input type="checkbox" tabindex="1" autofocus>
             <label for="radio">비공개</label>
 
-            <input name="name" placeholder="숫자를 기입해주세요" type="text" tabindex="1" required autofocus>
-          <h5>건의사항 작성하기</h5>
-            <input name="title" placeholder="제목 (20자 이내)" type="text" tabindex="2" required>
-            <input name="content" placeholder="내용 입력" type="text" tabindex="3" required>
-            <input type="file" name="파일 첨부" id="">
-            <label>답변 혼자 볼래요</label>
-            <input type="checkbox" tabindex="1" autofocus>
-            <label for="radio">엘리베이터에서 볼게요.</label>
-            <input name="hp" placeholder="연락처를 기입해주세요" type="tel" tabindex="1" autofocus>
-            <input type="submit" value="완료"/> 
+            <input style="margin-top: 8px;" name="number" value="801호" placeholder="숫자를 기입해주세요" type="text" tabindex="1" required autofocus>
+          <h5  style="margin-top: 10px;">건의사항 작성하기</h5>
+            <input style="margin-top: 4px;" name="title" value="담배 냄새가 너무 심해요" placeholder="제목 (20자 이내)" type="text" tabindex="2" required><label for="text"제목></label>
+            
+            <table style="margin-top: 3px;">
+              <tr>
+                <td rowspan="1" colspan="3" style="vertical-align: top; width: 100%;">
+                  <textarea required wrap="soft" rows="8" cols="85">"자꾸 새벽 12시만 되면 아랫집에서 담배냄새가 올라오는데
+이젠 정말 못참겠어요. 창문 열고 지내는데 담배 냄새가
+집안으로 다 들어오고 자기 전에 기분도 너무 불쾌해요!
+제발 담배 좀 나가서 피라고 이야기 좀 해주세요ㅠ</textarea>
+                </td>
+              </tr>
+            </table>
+              
+ <!-- 대체이미지 -->
+            <label id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
+            <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
+            <br>
+            <div style="margin-top: -20px;">
+              <label class="label-h5">답변 혼자 볼래요</label>
+              <input type="checkbox" tabindex="1" autofocus checked>
+              <label for="radio">엘리베이터에서 볼게요.</label>
+              <input name="hp" placeholder="연락처를 기입해주세요" type="tel" tabindex="1" autofocus>
+            </div>
+            
+            <br>
+            <input id="submit" type="submit" style="display: none;" name="완료"/><label for="submit">완료</label>
         </form>
       </fieldset>
         
