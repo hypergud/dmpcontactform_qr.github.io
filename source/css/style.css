@@ -38,7 +38,7 @@ body {
 
 #contact {
   background: #fff;
-  height: 80vh;
+  /* height: 80vh; */
   padding: 25px;
   margin: auto auto;
   margin-top: 50px;
@@ -246,7 +246,7 @@ table td{
 
 #camera{
   position: absolute;
-  top: 67.8%;
+  top: 70.5%;
   left: 86%;
 }
 
