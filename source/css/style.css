@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
@@ -38,9 +36,10 @@ body {
 }
 
 #contact {
-  background: #F9F9F9;
+  background: #fff;
   padding: 25px;
-  margin: 150px 0;
+  margin: auto auto;
+  margin-top: 50px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -142,3 +141,62 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+
+/* category */
+
+#category{text-align: center;margin-top: 10px;margin-bottom: -10px;}
+/* rario button */ 
+
+/* 라디오 버튼 숨기기 (원형 디스크) 푸시 버튼 효과를 생성하기 위해 레이블을 사용합니다.*/ 
+
+input[type=radio] { 
+  display:none;  
+  margin:0px; 
+} 
+
+
+
+/* 레이블 (radiobuttons에 인접한)의 look'n'feel을 변경하시면 됩니다. 
+
+레이블에 여백을 추가하고 패딩을 추가해 주면 됩니다.*/ 
+
+
+
+input[type=radio] + label {   
+  display:inline-block; 
+  margin:3px; 
+  padding: 0px 5px; 
+  background-color: #fff; 
+  border: 1px solid rgb(150, 150, 150); 
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 10vw; 
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 10vw; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 10vw; 
+  font-size: 12px !important; 
+  font-weight: 500;
+  width: 70px; 
+  text-align: center; 
+} 
+
+/* checked */
+input[type=radio]:checked + label {  
+  background-color: rgb(150, 150, 150); 
+  border: 1px solid rgb(150, 150, 150); 
+  color: #FFF;
+  font-weight: 600;
+} 
+
+/* 선택한 라디오 단추 옆의 레이블에 대한 배경색 변경하면 됩니다. 강조 표시된 버튼으로 보이게합니다.*/ 
+
+input[type=radio]:radio + label {  
+
+   background-image: none; 
+
+background-color:#3598dc; 
+
+color:#fff; 
+
+} 
