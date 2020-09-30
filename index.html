@@ -12,7 +12,8 @@
 <body>
     <div class="container"> 
       <fieldset>
-        <form id="contact" action="./result.html" method="get">
+        <!-- <form id="contact"> -->
+          <form id="contact" action="./result.html" method="get">
           <h3>땡땡아파트<br>건의사항을 말씀해주세요.</h3>
           <h4>답변은 엘리베이터에 게시됩니다.</h4>
           <h5>카테고리 선택</h5>
@@ -55,7 +56,8 @@
               <input name="hp" placeholder="연락처를 기입해주세요" type="tel" tabindex="1" autofocus>
             </div>
             <br>
-            <input id="submit" type="submit" style="display: none;" name="완료"/><label for="submit">완료</label>
+            <input id="submit" type="submit" onClick="location.href('./result.html')" style="display: none;" name="완료"/><label for="submit">완료</label>
+            
           </form>
         </fieldset>
       </div>
