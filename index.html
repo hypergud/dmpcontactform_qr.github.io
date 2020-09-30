@@ -12,7 +12,7 @@
 <body>
     <div class="container"> 
       <fieldset>
-        <form id="contact" action="./result.php" method="post">
+        <form id="contact" action="./result.html" method="post">
           <h3>땡땡아파트<br>건의사항을 말씀해주세요.</h3>
           <h4>답변은 엘리베이터에 게시됩니다.</h4>
           <h5>카테고리 선택</h5>
@@ -32,17 +32,14 @@
             <input type="checkbox" tabindex="1" autofocus>
             <label for="radio">비공개</label>
 
-            <input style="margin-top: 8px;" name="number" value="801호" placeholder="숫자를 기입해주세요" type="text" tabindex="1" required autofocus>
+            <input style="margin-top: 8px;" name="number" placeholder="숫자를 기입해주세요" onfocus="this.value='801호'" type="text" tabindex="1" required autofocus>
           <h5  style="margin-top: 10px;">건의사항 작성하기</h5>
-            <input style="margin-top: 4px;" name="title" value="담배 냄새가 너무 심해요" placeholder="제목 (20자 이내)" type="text" tabindex="2" required><label for="text"제목></label>
+            <input style="margin-top: 4px;" name="title" placeholder="제목 (20자 이내)" onfocus="this.value='담배 냄새가 너무 심해요'" type="text" tabindex="2" required><label for="text"제목></label>
             
             <table style="margin-top: 3px;">
               <tr>
                 <td rowspan="1" colspan="3" style="vertical-align: top; width: 100%;">
-                  <textarea required wrap="soft" rows="8" cols="85">"자꾸 새벽 12시만 되면 아랫집에서 담배냄새가 올라오는데
-이젠 정말 못참겠어요. 창문 열고 지내는데 담배 냄새가
-집안으로 다 들어오고 자기 전에 기분도 너무 불쾌해요!
-제발 담배 좀 나가서 피라고 이야기 좀 해주세요ㅠ</textarea>
+                  <textarea placeholder="내용을 입력해주세요" onfocus="this.placeholder='자꾸 새벽 12시만 되면 아랫집에서 담배냄새가 올라오는데 이젠 정말 못참겠어요. 창문 열고 지내는데 담배 냄새가 집안으로 다 들어오고 자기 전에 기분도 너무 불쾌해요! 제발 담배 좀 나가서 피라고 이야기 좀 해주세요ㅠ'" required wrap="soft" rows="8" cols="85"></textarea>
                 </td>
               </tr>
             </table>
@@ -51,7 +48,7 @@
             <label id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
             <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
             <br>
-            <div style="margin-top: -0px;">
+            <div>
               <label class="label-h5">답변 혼자 볼래요</label>
               <input type="checkbox" tabindex="1" autofocus checked>
               <label for="radio">엘리베이터에서 볼게요.</label>

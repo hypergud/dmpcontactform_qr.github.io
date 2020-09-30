@@ -38,6 +38,7 @@ body {
 
 #contact {
   background: #fff;
+  height: 80vh;
   padding: 25px;
   margin: auto auto;
   margin-top: 50px;
@@ -163,6 +164,21 @@ fieldset {
   color: #888;
 }
 
+textarea::placeholder{
+  color: black;
+}
+
+textarea::-webkit-input-placeholder{
+  color: black;
+}
+
+textarea::-moz-placeholder{
+  color: black;
+}
+
+textarea:-ms-input-placeholder{
+  color: black;
+}
 
 /* category */
 
@@ -229,14 +245,14 @@ table td{
 
 #camera{
   position: absolute;
-  top: 69.5%;
+  top: 70.5%;
   left: 86%;
 }
 
 
 input[type=submit] + label {   
   display:inline-block; 
-  margin-top: 8px;
+  margin-top: -10px;
   /* margin:5px 0;  */
   padding: 5px 5px; 
   background-color: #fff; 
