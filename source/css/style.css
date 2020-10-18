@@ -9,7 +9,7 @@
   -o-font-smoothing: antialiased;
   /* font-smoothing: antialiased; */
   text-rendering: optimizeLegibility;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NanumSquare', sans-serif !important;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px 'Noto Sans KR', sans-serif;
+  font: 400 12px/16px 'NanumSquare', sans-serif !important;
 }
 
 #contact {
@@ -48,27 +48,29 @@ body {
 
 #contact h3 {
   display: block;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 27px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 12px;
   color: black;
 }
 
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 400;
   color: black;
+  line-height: 18px;
+  padding-bottom: 10px;
 }
 
 #contact h5 {
   margin: 5px 0 5px;
   display: block;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 800;
   color: black;
 }
 
@@ -78,6 +80,15 @@ body {
   font-size: 13px;
   font-weight: 600;
   color: black;
+}
+
+label[for="radio"]{
+  position: relative;
+  top: -3px;
+}
+
+.radio{
+  font-weight: 600;
 }
 
 fieldset {
@@ -184,7 +195,7 @@ textarea:focus:-ms-input-placeholder{
 
 /* category */
 
-#category{text-align: center;margin-top: 10px;margin-bottom: -10px;}
+#category{text-align: center;margin-top: 5px;margin-bottom: -10px;}
 /* rario button */ 
 
 /* 라디오 버튼 숨기기 (원형 디스크) 푸시 버튼 효과를 생성하기 위해 레이블을 사용합니다.*/ 
@@ -204,7 +215,7 @@ input[type=radio] {
 
 input[type=radio] + label {   
   display:inline-block; 
-  margin:3px; 
+  margin:4px; 
   padding: 0px 5px; 
   background-color: #fff; 
   border: 1px solid rgb(110, 110, 110); 
@@ -216,7 +227,8 @@ input[type=radio] + label {
   border-radius: 10vw; 
   font-size: 12px !important; 
   font-weight: 500;
-  width: 70px; 
+  width: 75px; 
+  height: 32px;
   text-align: center; 
   color: rgb(80, 80, 80); ;
 } 
@@ -232,13 +244,9 @@ input[type=radio]:checked + label {
 /* 선택한 라디오 단추 옆의 레이블에 대한 배경색 변경하면 됩니다. 강조 표시된 버튼으로 보이게합니다.*/ 
 
 input[type=radio]:radio + label {  
-
-   background-image: none; 
-
-background-color:#3598dc; 
-
-color:#fff; 
-
+  background-image: none; 
+  background-color:#3598dc; 
+  color:#fff; 
 } 
 
 table td{
@@ -246,9 +254,7 @@ table td{
 }
 
 #camera{
-  position: absolute;
-  top: 70.5%;
-  left: 86%;
+  margin-left: 160px;
 }
 
 
