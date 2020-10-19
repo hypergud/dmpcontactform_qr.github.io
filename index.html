@@ -33,10 +33,13 @@
             <input style="margin-right: 3px;" type="checkbox" tabindex="1" autofocus>
             <label for="radio" class="radio">비공개</label>
             <input style="margin-top: 0px;margin-bottom: 20px;" name="number" placeholder="숫자를 기입해주세요" type="text" tabindex="1" required autofocus>
-            <h5  style="margin-top: 20px;display: inline;padding: 5px 0;margin-right: 40px;">건의사항 작성하기</h5>
-           <!-- 대체이미지 -->
-           <label style="cursor: pointer;" id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
-           <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
+            <div class="justify">
+              <h5 class="left"  style="display: inline;text-align: left;">건의사항 작성하기</h5>
+             <!-- 대체이미지 -->
+             <label class="right" style="cursor: pointer;" id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
+             <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
+            </div>
+            
 
            <!-- <input style="margin-top: 4px;" name="title" placeholder="제목 (20자 이내)" onfocus="this.value='담배 냄새가 너무 심해요'" type="text" tabindex="2" required><label for="text"제목></label> -->
             <input style="margin-top: 4px;" name="title" placeholder="제목 (20자 이내)" type="text" tabindex="2" required><label for="text"제목></label>
@@ -54,7 +57,7 @@
 
             <br>
             <div>
-              <label class="label-h5" ><h5 style="display: inline;margin-right: 62px;">답변 받을 연락처</h5></label>
+              <label class="label-h5" ><h5 style="display: inline;margin-right: 55px;">답변 받을 연락처</h5></label>
               <input style="margin-right: 3px;" type="checkbox" tabindex="1" autofocus>
               <label for="radio" class="radio">엘리베이터에 게시해주세요.</label>
               <input name="hp" placeholder="연락처를 기입해주세요" type="tel" tabindex="1" autofocus>
