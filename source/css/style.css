@@ -323,3 +323,30 @@ input[type=submit]:hover + label:hover {
   font-weight: 600;
   cursor: pointer;
 } 
+
+
+
+@media screen and (width:1920px) {
+  body{
+    /* background-color: yellow; */
+  }
+
+
+.right{
+  display: inline;
+  text-align: right;
+  margin-left: 50px;
+  position: relative;
+  top: 3px;
+  left: 100px;
+}
+
+
+.right2{
+  display: inline;
+  text-align: right;
+  margin-left: 50px;
+  position: relative;
+}
+}
+
