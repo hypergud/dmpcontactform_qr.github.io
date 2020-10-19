@@ -277,7 +277,7 @@ table td{
 .right{
   display: inline;
   text-align: right;
-  margin-left: 53px;
+  margin-left: 50px;
   position: relative;
   top: 3px;
   left: 80px;
@@ -299,8 +299,6 @@ table td{
   text-align: right;
   margin-left: 20px;
   position: relative;
-  top: 0px;
-  left: 0px;
 }
 
 
