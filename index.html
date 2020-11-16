@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-    <title>땡땡아파트 건의함</title>
+    <title>땡땡아파트 소통함</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link rel="stylesheet" href="./source/css/reset.css">
     <link rel="stylesheet" href="./source/css/style.css">
@@ -13,8 +13,8 @@
     <div class="container"> 
       <fieldset>
         <!-- <form id="contact"> -->
-          <form id="contact" action="./result.html" method="get">
-          <h3>땡땡아파트<br>건의사항을 말씀해주세요.</h3>
+          <form id="contact" action="./choose.html" method="get">
+          <h3>땡땡아파트<br>소통함입니다.</h3>
           <h4>하단에 연락처를 기재해주시면 답변 보내드립니다.<br>발송 후 연락처는 폐기됩니다.</h4>
           <h5>카테고리 선택</h5>
           <div id="category">
@@ -34,7 +34,7 @@
             <label for="radio" class="radio">비공개</label>
             <input style="margin-top: 0px;margin-bottom: 20px;" name="number" placeholder="숫자를 기입해주세요" type="text" tabindex="1" autofocus>
             <div class="justify">
-              <h5 class="left"  style="display: inline;text-align: left;">건의사항 작성하기</h5>
+              <h5 class="left"  style="display: inline;text-align: left;">메세지 작성하기</h5>
              <!-- 대체이미지 -->
              <label class="right" style="cursor: pointer;" id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
              <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
@@ -55,18 +55,17 @@
             </table>
               
 
-            <br>
             <div>
               <label class="label-h5 left2" ><h5 style="display: inline;">답변 받을 연락처</h5></label>
-                <div class="right2">
+                <!-- <div class="right2">
                   <input style="margin-right: 3px;" type="checkbox" tabindex="1" autofocus>
                 <label for="radio" class="radio">엘리베이터에 게시해주세요.</label>
-                </div>
+                </div> -->
               
               <input name="hp" placeholder="연락처를 기입해주세요" type="tel" tabindex="1" autofocus>
             </div>
             <br>
-            <input id="submit" type="submit" onClick="location.href('./result.html')" style="display: none;" name="완료"/><label for="submit" style="margin-bottom: 15px;">완료</label>
+            <input id="submit" type="submit" onClick="location.href('./choose.html')" style="display: none;" name="완료"/><label for="submit" style="margin-bottom: 15px;">완료</label>
             <br>
           </form>
         </fieldset>

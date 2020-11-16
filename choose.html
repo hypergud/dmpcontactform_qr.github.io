@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>땡땡아파트 소통함</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="./source/css/reset.css">
+    <link rel="stylesheet" href="./source/css/style2.css">
+</head>
+<body>
+    <div class="container"> 
+      <fieldset>
+        <!-- <form id="contact"> -->
+          <form id="contact" action="./result.html" method="get" style="height: 85.4vh;">
+          <h3>메세지 전달 방식을<br>선택해주세요.</h3>
+
+          <ul>
+            <li>
+              <input type="radio" id="f-option" name="selector">
+              <label onclick='window.location.assign("./result.html")' for="f-option">
+                
+                <h5>관리실 답변을 게시해주세요</h5>
+                <h4>이후 전송되는 메세지 내용이 엘리베이터에 게시됩니다.</h4>
+              </label>
+              
+              <div  onclick='window.location.assign("./result.html")' class="check"></div>
+            </li>
+            
+            <li>
+              <input type="radio" id="s-option" name="selector">
+              <label onclick='window.location.assign("./result.html")' for="s-option">
+                <h5>제 메세지를 게시해주세요</h5>
+                <h4>관리실의 검수 이후 엘리베이터에 게시됩니다.</h4>
+              </label>
+              
+              <div onclick='window.location.assign("./result.html")' class="check"></div>
+            </li>
+            
+            <li>
+              <input type="radio" id="t-option" name="selector">
+              <label onclick='window.location.assign("./result.html")' for="t-option">
+                <h5>문자로 답변만 받을게요</h5>
+                <h4>엘리베이터에는 게시되지 않습니다.</h4>
+              </label>
+              
+              <div onclick='window.location.assign("./result.html")' class="check"></div>
+            </li>
+          </ul>
+          </form>
+        </fieldset>
+      </div>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.check').hover(function() {
+        $(this).prev('label').css('border', '1px solid black');
+      }, function() {
+        $(this).prev('label').css('border', '1px solid  #AAAAAA');
+    });
+
+    $('label').hover(function() {
+        $(this).css('border', '1px solid black');
+      }, function() {
+        $(this).css('border', '1px solid  #AAAAAA');
+    });
+});
+</script>
+</html>
