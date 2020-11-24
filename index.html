@@ -35,9 +35,6 @@
             <input style="margin-top: 0px;margin-bottom: 20px;" name="number" placeholder="숫자를 기입해주세요" type="text" tabindex="1" autofocus>
             <div class="justify">
               <h5 class="left"  style="display: inline;text-align: left;">메세지 작성하기</h5>
-             <!-- 대체이미지 -->
-             <label class="right" style="cursor: pointer;" id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
-             <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
             </div>
             
 
@@ -49,10 +46,20 @@
                 <td rowspan="1" colspan="3" style="vertical-align: top; width: 100%;">
                   <!-- <textarea placeholder="내용을 입력해주세요" onfocus="this.placeholder='자꾸 새벽 12시만 되면 아랫집에서 담배냄새가 올라오는데 이젠 정말 못참겠어요. 창문 열고 지내는데 담배 냄새가 집안으로 다 들어오고 자기 전에 기분도 너무 불쾌해요! 제발 담배 좀 나가서 피라고 이야기 좀 해주세요ㅠ'" wrap="soft" rows="8" cols="85"></textarea> -->
                   <textarea placeholder="내용을 입력해주세요" wrap="soft" rows="8" cols="85"></textarea>
-                
                 </td>
               </tr>
             </table>
+            
+             <!-- 대체이미지 -->
+             <div class="upload">
+              <!-- <h5 class="left"  style="display: inline;text-align: left;padding-right: 0PX;">파일 첨부하기</h5> -->
+              <!-- <br> -->
+              <label class="right" style="cursor: pointer;" id="camera" for="file-input"><img src="./source/img/camera.png" alt=""></label>
+             <input id="file-input" type="file" style="display: none;" name="파일 첨부" id="">
+             <!-- <label class="txt">카메라 아이콘을 클릭하세요</label> -->
+             <div class="file-preview"></div>
+          </div>
+             
               
 
             <div>
@@ -71,4 +78,47 @@
         </fieldset>
       </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+       $('input[type=file]').change(function(e) {
+    if(typeof FileReader == "undefined") return true;
+
+    var elem = $(this);
+    var files = e.target.files;
+
+    for (var i=0, file; file=files[i]; i++) {
+        if (file.type.match('image.*')) {
+            var reader = new FileReader();
+            reader.onload = (function(theFile) {
+                return function(e) {
+                  var image = e.target.result;
+                    previewDiv = $('.file-preview', elem.parent());
+                    bgWidth = previewDiv.width();
+                    // bgHeight = previewDiv.height();
+                    bgHeight = 200;
+                    previewDiv.css({
+                        "background-size":bgHeight + "px, auto",
+                        "background-repeat":"no-repeat",
+                        "background-position":"50%, 50%",
+                        "background-image":"url("+image+")",
+                        "height": 200 + "px",
+                    });
+                    
+                    
+                };
+            })(file);
+            reader.readAsDataURL(file);
+            // var fileBox = $('.file-preview');
+            // var imgH = file.height();
+            // var previewDiv = $('.file-preview', elem.parent());
+            // var imgHeight = image.height();
+            // console.log(imgHeight);
+            // fileBox.height(imgHeight);
+        }
+    }
+    
+    
+});
+
+</script>
 </html>
