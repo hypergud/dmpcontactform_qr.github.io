@@ -235,10 +235,37 @@ input[type=radio] + label {
 
 /* checked */
 input[type=radio]:checked + label {  
-  background-color: rgb(110, 110, 110); 
-  border: 1px solid rgb(110, 110, 110); 
-  color: #FFF;
+  color: #000;
   font-weight: 600;
+} 
+
+#radio1:checked + label {  
+  background-color: #f19138;
+  border: 1px solid #f19138;
+} 
+#radio2:checked + label {  
+  background-color: #76f138;
+  border: 1px solid #76f138;
+} 
+#radio3:checked + label {  
+  background-color: #b338f1;
+  border: 1px solid #b338f1;
+} 
+#radio4:checked + label {  
+  background-color: #4059fe;
+  border: 1px solid #4059fe;
+} 
+#radio5:checked + label {  
+  background-color: #e8f138;
+  border: 1px solid #e8f138;
+} 
+#radio6:checked + label {  
+  background-color: #38ebf1;
+  border: 1px solid #38ebf1;
+} 
+#radio7:checked + label {  
+  background-color: #fa4181;
+  border: 1px solid #fa4181;
 } 
 
 /* 선택한 라디오 단추 옆의 레이블에 대한 배경색 변경하면 됩니다. 강조 표시된 버튼으로 보이게합니다.*/ 
